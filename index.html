@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do List</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>To-do</h1>
+        <p>Une liste des actions à faire dans la journée</p>
+    </header>
+    <div class="container">
+        <div class="form">
+            <input type="text" autofocus id="myInput" placeholder="Que dois-je faire ? :)" autofocus>
+            <span onclick="newElement()" class="addBtn">+</span>
+            
+
+        </div>
+        <div class="c-list">
+            <ul class="list" id="myUL">
+                <li>Faire cette to-do list</li>  
+                <li class="checked">Faire un site de drop-shipping</li>
+                <li>Regarder les cartes graphiques</li>
+                <li>Acheter de l'eau</li>
+                <li>Boire l'eau</li>
+                <li>Dormir</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
