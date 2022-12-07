@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-:root{
-    --Black:rgb(17, 17, 17);
-    --blue:rgb(63, 112, 227);
+
+:root {
+    --Black: rgb(17, 17, 17);
+    --blue: rgb(63, 112, 227);
 }
 
 html {
     height: 100%;
-color: white;
-font-family: 'Roboto', sans-serif;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -21,10 +22,11 @@ h1 {
     font-size: 8em;
 }
 
-p{
+p {
     text-align: center;
     font-size: 2em;
 }
+
 /* centre le container */
 
 .container {
@@ -38,10 +40,12 @@ p{
     padding: 20px;
 
 }
+
 /* centre la bulle de texte */
 .form {
-    display: flex;;
-    justify-content:space-between;
+    display: flex;
+    ;
+    justify-content: space-between;
 }
 
 /* Champ de texte */
@@ -56,10 +60,15 @@ input {
     box-shadow: 0px 0px 0px 0px rgba(42, 42, 42, .75);
     text-shadow: 0px 0px 0px rgba(42, 42, 42, .78);
     transition: 0.3s;
-    margin-left: 17px;   
+    margin-left: 17px;
+    border: none;
 }
 
 .input:focus {
+    outline: none;
+}
+
+*:focus {
     outline: none;
 }
 
@@ -77,40 +86,59 @@ input {
     margin-right: 470px;
     width: 20px;
     opacity: 0.6;
-    
-  }
- 
 
-  .addBtn:hover{
-    transition: 0.5s;;
+}
+
+
+.addBtn:hover {
+    transition: 0.5s;
+    ;
     opacity: 1;
-  }
-  
-  ul li.checked {
+}
+
+.editBtn {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.6;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.editBtn:hover {
+    transition: 0.5s;
+    opacity: 1;
+    color: var(--Black);
+}
+
+ul li.checked {
     text-decoration: line-through var(--blue);
     transition: 0.6s;
-    
-  }
- 
-  li{
+
+}
+
+li {
     font-size: 1.3em;
     transition: 0.4s;
-  }
-  li:hover{
+}
+
+li:hover {
     font-size: 1.5em;
     transition: 0.7s ease-in-out;
-    
-  }
- 
- .close{
+
+}
+
+.close {
     margin-left: 5px;
     transition: 0.3s;
     position: absolute;
- }
- .close:hover{
+}
+
+.close:hover {
     color: var(--Black);
     transition: 0.3s;
- }
- .empty{
+}
+
+.empty {
     display: none;
- }
+}
